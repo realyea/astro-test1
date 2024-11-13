@@ -1,0 +1,20 @@
+---
+import Image from "astro/components/Image.astro"
+import img1 from "../../public/1.jpg";
+import img2 from "../../public/2.jpg";
+import '../styles/global.css'
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+	</head>
+	<body>
+		<Image src={img1} alt=""/>
+		<Image src={img2} alt=""/>
+	</body>
+</html>
