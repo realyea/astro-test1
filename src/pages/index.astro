@@ -2,6 +2,7 @@
 import { Image } from "astro:assets";
 import img1 from "../../public/1.jpg";
 import img2 from "../../public/2.jpg";
+import video from "../../public/hello.mp4";
 import '../styles/global.css';
 ---
 
@@ -16,6 +17,8 @@ import '../styles/global.css';
 	<body>
 		<Image src={img1} alt=""/>
 		<Image src={img2} alt=""/>
-		<video src="../../public/hello.mp4" controls></video>
+		<video controls>
+			<source src={video} type="video/mp4"/>
+		</video>
 	</body>
 </html>
